@@ -1,0 +1,89 @@
+import { HiOutlineCheckCircle, HiOutlineBriefcase } from "react-icons/hi";
+import { YellowPattern, PhotoPlaceholder } from "../components/YellowPattern";
+import bitmap2 from "../assets/Bitmap (2).svg";
+import bitmap3 from "../assets/Bitmap (3).svg";
+
+const featureCards = [
+  {
+    title: "Endurance",
+    description: "The primary service rendered by a law firm is to advise clients about.",
+  },
+  {
+    title: "Communication",
+    description: "Rendered by a law firm is to advise clients about their legal rights.",
+  },
+  {
+    title: "Attention to detail",
+    description: "Firm is to advise clients about their legal rights and responsibilities.",
+  },
+  {
+    title: "Teamwork",
+    description: "About their legal rights and responsibilities, and to represent.",
+  },
+];
+
+const featureImages = [bitmap2, bitmap3, bitmap2, bitmap3];
+
+export function Features() {
+  return (
+    <section id="features" className="bg-cream py-24">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:px-10 lg:grid-cols-2">
+        <div>
+          <span className="mb-4 block text-xs font-bold uppercase tracking-[0.3em] text-gold">Features</span>
+          <h2 className="mb-6 font-serif text-4xl font-bold leading-tight text-ink md:text-5xl">
+            Collegiality and <br /> esprit de corps
+          </h2>
+          <p className="mb-8 max-w-md leading-relaxed text-ink/70">
+            The primary service is to advise clients about their legal rights and responsibilities.
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-3 text-ink">
+              <HiOutlineCheckCircle className="text-gold" size={20} />
+              <span className="font-medium">Competent, Hard-Working, Focused</span>
+            </li>
+            <li className="flex items-center gap-3 text-ink">
+              <HiOutlineCheckCircle className="text-gold" size={20} />
+              <span className="font-medium">Commitment to Quality</span>
+            </li>
+            <li className="flex items-center gap-3 text-ink">
+              <HiOutlineCheckCircle className="text-gold" size={20} />
+              <span className="font-medium">Sense of Fairness</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="relative h-[460px] w-full">
+          <PhotoPlaceholder label="Lawyer Speaking" className="absolute left-0 top-10 h-[320px] w-[240px] shadow-lg" />
+          <div className="absolute left-[200px] top-0 hidden h-12 w-12 items-center justify-center bg-ink text-gold md:flex">
+            <HiOutlineBriefcase size={22} />
+          </div>
+          <PhotoPlaceholder label="Suit" tone="dark" className="absolute right-12 top-0 h-[200px] w-[180px] shadow-lg" />
+          <YellowPattern className="absolute bottom-0 right-0 h-[160px] w-[200px]" variant="horizontal" />
+        </div>
+      </div>
+
+      {/* Feature cards row */}
+      <div className="mx-auto mt-20 max-w-7xl px-6 md:px-10">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {featureCards.map((card, index) => (
+            <article
+              key={card.title}
+              className="group relative h-64 overflow-hidden transition hover:shadow-2xl"
+            >
+              <img 
+                src={featureImages[index]} 
+                alt={card.title}
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-ink/60" />
+              <div className="relative z-10 p-6">
+                <h3 className="mb-2 font-serif text-xl font-bold text-cream">{card.title}</h3>
+                <p className="text-sm text-cream/80">{card.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
