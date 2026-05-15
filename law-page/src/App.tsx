@@ -15,6 +15,7 @@ import {Team }from "./sections/Team";
 import {Media} from "./sections/Media";
 import {Blog }from "./sections/Blog";
 import {Contact} from "./sections/Contact";
+import {Map} from "./sections/Map";
 import{Footer} from "./sections/Footer";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Media />
       <Blog />
       <Contact />
+      <Map />
       <Footer />
 
     </main>
