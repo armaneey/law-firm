@@ -36,8 +36,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="bg-cream py-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 px-6 md:px-10 lg:grid-cols-2">
-        {/* Left: contact info */}
+      <div className="mx-auto grid max-w-7xl grid-cols-1 px-8 md:px-10 lg:grid-cols-2">
         <div className="bg-cream p-10 md:p-14">
           <span className="mb-4 block text-xs font-bold uppercase tracking-[0.3em] text-gold">Contact</span>
           <h2 className="mb-10 font-serif text-4xl font-bold leading-tight text-ink md:text-5xl">
@@ -55,21 +54,21 @@ export function Contact() {
           </ul>
         </div>
 
-        <div className="relative overflow-hidden bg-gold p-10 md:p-14">
-          <YellowPattern className="absolute inset-0 h-full w-full opacity-60" />
+        <div className="relative overflow-hidden bg-white p-20 md:p-14">
+          <YellowPattern className="absolute inset-0 h-full w-full opacity-80" />
           <div className="relative">
             <h3 className="mb-8 font-serif text-3xl font-bold text-ink md:text-4xl">Free Consultation</h3>
             <form onSubmit={form.onSubmit(handleSubmit)} className="space-y-5">
               <TextInput 
                 placeholder="Your Email" 
-                variant="unstyled" 
+                variant="filled" 
                 classNames={{ input: "border-b border-ink/40 pb-2 placeholder:text-ink/60 rounded-none" }} 
                 {...form.getInputProps("email")} 
               />
               <Select 
                 placeholder="Subject" 
                 data={SERVICE_OPTIONS} 
-                variant="unstyled" 
+                variant="filled" 
                 classNames={{ input: "border-b border-ink/40 pb-2 placeholder:text-ink/60 rounded-none" }} 
                 {...form.getInputProps("service")} 
               />
@@ -77,18 +76,20 @@ export function Contact() {
                 placeholder="Message" 
                 minRows={3} 
                 autosize 
-                variant="unstyled" 
+                variant="filled" 
                 classNames={{ input: "border-b border-ink/40 pb-2 placeholder:text-ink/60 rounded-none" }} 
                 {...form.getInputProps("message")} 
               />
+              <div className="flex justify-start pt-2">
               <Button 
                 type="submit" 
                 radius={0} 
-                size="md" 
-                styles={{ root: { backgroundColor: "#0D0D0D", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase" } }}
+                size="lg" 
+                styles={{ root: { backgroundColor: "#0D0D0D" , fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", height: '54px' } }}
               >
                 Submit
               </Button>
+              </div>
               {submitted && <p className="mt-4 text-sm font-medium text-ink">Thanks — we'll be in touch shortly.</p>}
             </form>
           </div>

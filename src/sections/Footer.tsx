@@ -17,9 +17,6 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4 md:px-10">
         <div>
           <span className="font-serif text-3xl font-bold tracking-widest text-white">LAW</span>
-          <p className="mt-4 text-sm text-white/70">
-            The primary service is to advise clients about their legal rights and responsibilities.
-          </p>
         </div>
         {footerColumns.map((col) => (
           <div key={col.heading}>
@@ -57,7 +54,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/50 md:flex-row md:px-10">
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center justify-between gap-3 border-t border-white/12 px-6 pt-6 text-xs text-white/50 md:flex-row md:px-10">
         <p>Copyright © {new Date().getFullYear()} Law Firm. All Rights Reserved.</p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-gold">Terms of Use</a>

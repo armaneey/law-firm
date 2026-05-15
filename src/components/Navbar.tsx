@@ -27,7 +27,7 @@ export function Navbar() {
 
         <a
           href="#contact"
-          className="hidden rounded-none bg-ink px-6 py-3 text-xs font-semibold uppercase tracking-widest text-cream transition hover:bg-ink/85 md:inline-block"
+          className="hidden rounded-none bg-black px-6 py-3 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-gold/85 border:gold md:inline-block"
         >
           Contact
         </a>

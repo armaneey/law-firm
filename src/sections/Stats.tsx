@@ -1,4 +1,3 @@
-//import { Stats } from "../sections/Stats";
 import CountUp from "react-countup";
 
 const Stats= [

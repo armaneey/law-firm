@@ -2,7 +2,7 @@ import map from "../assets/map.svg";
 
 export function Map() {
   return (
-    <section className="h-[300px] w-full">
+    <section className="h-[280px] w-full">
       <img 
         src={map} 
         alt="Map" 

@@ -23,9 +23,9 @@ const media = [
 
 export function Media() {
   return (
-    <section className="bg-cream py-20">
-      <div className="mx-auto max-w-7xl bg-cream px-6 md:px-10">
-        <div className="bg-cream p-10 shadow-sm ring-1 ring-ink/5 md:p-14">
+    <section className="bg-white py-20">
+      <div className="mx-auto max-w-7xl bg-white px-6 md:px-10">
+        <div className="bg-cream p-10 shadow-sm ring-md:p-14">
           <h2 className="mb-12 text-center font-serif text-3xl font-bold text-ink md:text-4xl">We on media</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {media.map((m) => (

@@ -1,7 +1,7 @@
 import { HiOutlineScale } from "react-icons/hi";
 import { FiArrowRight } from "react-icons/fi";
 import pic3 from "../assets/pic (3).svg"
-import { YellowPattern, PhotoPlaceholder } from "../components/YellowPattern";
+import { YellowPattern } from "../components/YellowPattern";
 
 export function LegalRights() {
   return (
@@ -18,7 +18,7 @@ export function LegalRights() {
           <div className="absolute left-[260px] top-[120px] hidden h-12 w-12 items-center justify-center bg-gold text-ink md:flex">
             <HiOutlineScale size={22} />
           </div>
-          <PhotoPlaceholder label="Gavel" className="absolute bottom-0 right-4 h-[280px] w-[260px] shadow-lg md:right-12" />
+          
           <div className="absolute bottom-12 left-20 hidden h-12 w-12 items-center justify-center bg-ink text-gold md:flex">
             <HiOutlineScale size={22} />
           </div>

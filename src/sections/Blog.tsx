@@ -30,26 +30,24 @@ export function Blog() {
             </article>
           ))}
         </div>
-
-        <div className="mx-auto mt-16 max-w-2xl bg-cream p-8 shadow-sm ring-1 ring-ink/5">
-          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
-            <div>
-              <h3 className="mb-1 font-serif text-2xl font-bold text-ink">Newsletter</h3>
-              <p className="text-sm text-ink/65">Cases, business transactions, and other matters.</p>
-            </div>
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="flex-1 border-b border-ink/30 bg-transparent py-3 text-sm text-ink outline-none placeholder:text-ink/40"
-              />
-              <button type="submit" className="ml-3 bg-ink px-5 py-3 text-xs font-bold uppercase tracking-widest text-cream">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-
+<div className="mx-auto mt-16 max-w-4xl bg-white p-12 shadow-md">
+  <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+    <div>
+      <h3 className="mb-2 font-serif text-4xl font-bold text-ink">Newsletter</h3>
+      <p className="text-base text-ink/65">Cases, business transactions, and other matters.</p>
+    </div>
+    <form className="flex items-end">
+      <input
+        type="email"
+        placeholder="Your Email"
+        className="flex-1 border-b border-ink/30 bg-transparent py-4 text-lg text-ink outline-none placeholder:text-ink/40"  />
+     
+      <button type="submit" className="ml-5 bg-ink px-8 py-4 text-sm font-bold uppercase tracking-widest text-cream transition-hover hover:bg-gold hover:text-ink">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
         <p className="mt-10 text-center text-sm text-ink/65">
           Read All News & Articles. <a href="#blog" className="font-semibold text-ink underline-offset-4 hover:underline">Explore Blog</a>
         </p>

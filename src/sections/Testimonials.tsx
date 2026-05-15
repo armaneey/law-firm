@@ -15,7 +15,7 @@ export function Testimonials() {
           <img 
             src={baby1} 
             alt="Happy Client" 
-            className="h-[360px] w-full object-cover md:h-[440px]"
+            className="h-[370px] w-full object-cover md:h-[450px]"
           />
           <div className="absolute right-4 top-1/2 max-w-sm -translate-y-1/2 bg-cream p-8 shadow-2xl md:right-12">
             <p className="mb-4 font-serif text-base italic leading-relaxed text-ink">

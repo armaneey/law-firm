@@ -15,7 +15,7 @@ export function HowWeWork() {
             alt="Consultation" 
             className="h-[360px] w-full object-cover md:h-[480px]"
           />
-          <div className="absolute bottom-8 left-8 max-w-md bg-cream p-6 shadow-2xl md:p-8">
+          <div className="absolute bottom-8 left-8 max-w-md bg-white p-6 shadow-2xl md:p-8">
             <h3 className="mb-3 font-serif text-xl font-bold text-ink">1. Analyzing legislation</h3>
             <p className="text-sm leading-relaxed text-ink/70">
               The primary service rendered by a law firm is to advise clients about their legal rights and responsibilities.

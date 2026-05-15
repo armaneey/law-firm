@@ -41,7 +41,7 @@ export function Portfolio() {
         </div>
 
         <div className="mt-12 text-center">
-          <a href="#cases" className="inline-block bg-cream px-8 py-3 text-xs font-bold uppercase tracking-[0.25em] text-ink shadow-md ring-1 ring-ink/10 hover:bg-ink hover:text-cream">
+          <a href="#cases" className="inline-block bg-ash px-8 py-3 text-xs font-bold uppercase tracking-[0.25em] text-ink shadow-md ring-1 ring-ink/10 hover:bg-ink hover:text-cream">
             All Cases
           </a>
         </div>

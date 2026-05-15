@@ -12,7 +12,7 @@ const awards = [
 
 export function Awards() {
   return (
-    <section className="bg-cream py-20">
+    <section className="bg-white py-20">
       <div className="mx-auto max-w-5xl px-6 text-center md:px-10">
         <h2 className="mb-12 font-serif text-3xl font-bold text-ink md:text-4xl">Our awards</h2>
         <div className="flex flex-wrap items-center justify-around gap-8">

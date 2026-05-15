@@ -1,27 +1,33 @@
 import { HiOutlineCheckCircle, HiOutlineBriefcase } from "react-icons/hi";
 import { YellowPattern } from "../components/YellowPattern";
 import pic4 from "../assets/pic (4).svg";
+import bitmap22 from "../assets/Bitmap (22).svg"
+import bitmap23 from "../assets/Bitmap (23).svg"
+import bitmap24 from "../assets/Bitmap (24).svg"
+import bitmap25 from "../assets/Bitmap (25).svg"
 
-const featureCards = [
+const FEATURES_DATA = [
   {
     title: "Endurance",
     description: "The primary service rendered by a law firm is to advise clients about.",
+    image: bitmap22,
   },
   {
     title: "Communication",
     description: "Rendered by a law firm is to advise clients about their legal rights.",
+    image: bitmap23,
   },
   {
     title: "Attention to detail",
     description: "Firm is to advise clients about their legal rights and responsibilities.",
+    image: bitmap24,
   },
   {
     title: "Teamwork",
     description: "About their legal rights and responsibilities, and to represent.",
+    image: bitmap25,
   },
 ];
-
-const featureImages = [pic4];
 
 export function Features() {
   return (
@@ -65,16 +71,15 @@ export function Features() {
         </div>
       </div>
 
-      {/* Feature cards row */}
       <div className="mx-auto mt-20 max-w-7xl px-6 md:px-10">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {featureCards.map((card, index) => (
+          {FEATURES_DATA.map((card) => (
             <article
               key={card.title}
               className="group relative h-64 overflow-hidden transition hover:shadow-2xl"
             >
               <img 
-                src={featureImages[index]} 
+                src={card.image} 
                 alt={card.title}
                 className="absolute inset-0 h-full w-full object-cover"
               />

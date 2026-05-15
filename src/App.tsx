@@ -12,6 +12,7 @@ import {Portfolio} from "./sections/Portfolio";
 import {FreeConsultBanner} from "./sections/FreeConsultBanner";
 import {FounderQuote} from "./sections/FounderQuote";
 import {Team }from "./sections/Team";
+import { Testimonials } from "./sections/Testimonials";
 import {Media} from "./sections/Media";
 import {Blog }from "./sections/Blog";
 import {Contact} from "./sections/Contact";
@@ -36,6 +37,7 @@ function App() {
         <FreeConsultBanner />
       <FounderQuote />
       <Team />
+      <Testimonials/>
       <Media />
       <Blog />
       <Contact />
