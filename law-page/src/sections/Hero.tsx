@@ -1,12 +1,11 @@
 import { HiOutlineLibrary, HiStar } from "react-icons/hi";
-import { YellowPattern } from "../components/YellowPattern";
-import pic from "../assets/pic.svg";
+import { YellowPattern, PhotoPlaceholder } from "../components/YellowPattern";
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-cream pt-32 pb-0 md:pt-40">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 pb-20 md:px-10 lg:grid-cols-2 lg:gap-8">
-        {/* Left Content */}
+        
         <div id="about" className="flex flex-col justify-center pt-4 lg:pt-8">
           <span className="mb-6 text-xs font-bold uppercase tracking-[0.3em] text-gold">Law Firm</span>
           <h1 className="font-serif text-5xl font-bold leading-[1.1] text-ink md:text-6xl lg:text-7xl">
@@ -22,24 +21,23 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right Content - Image */}
+        {/* Right Content - Images */}
         <div className="relative h-[500px] w-full md:h-[600px] lg:h-[650px]">
           <YellowPattern className="absolute right-0 top-0 h-full w-[90%]" />
           
-          {/* Combined Image */}
-          <img 
-            src={pic} 
-            alt="Lawyers" 
-            className="absolute left-0 top-8 z-10 h-[400px] w-full object-cover shadow-xl md:left-4 md:h-[480px]"
-          />
+          {/* First Image - Woman */}
+          <PhotoPlaceholder label="Lawyer 1" className="absolute left-0 top-8 z-10 h-[240px] w-[190px] shadow-xl md:left-4 md:h-[280px] md:w-[220px]" />
           
           {/* Building Icon */}
-          <div className="absolute right-8 top-[50px] z-20 hidden h-14 w-14 items-center justify-center rounded-full bg-ink text-gold shadow-lg md:flex">
+          <div className="absolute left-[180px] top-[50px] z-20 hidden h-14 w-14 items-center justify-center rounded-full bg-ink text-gold shadow-lg md:left-[210px] md:flex">
             <HiOutlineLibrary size={24} />
           </div>
           
+          {/* Second Image - Man */}
+          <PhotoPlaceholder label="Lawyer 2" className="absolute right-8 top-[160px] z-10 h-[300px] w-[240px] shadow-xl md:right-12 md:h-[360px] md:w-[290px]" />
+          
           {/* Testimonial Card */}
-          <div className="absolute bottom-12 right-4 z-20 max-w-[300px] bg-cream p-5 shadow-2xl md:right-8">
+          <div className="absolute bottom-12 left-4 z-20 max-w-[300px] bg-cream p-5 shadow-2xl md:left-8">
             <div className="mb-3 flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-gold" />
               <div>
