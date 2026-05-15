@@ -1,8 +1,6 @@
 import { HiOutlineCheckCircle, HiOutlineBriefcase } from "react-icons/hi";
 import { YellowPattern } from "../components/YellowPattern";
-import bitmap2 from "../assets/Bitmap (2).svg";
-import bitmap3 from "../assets/Bitmap (3).svg";
-import pic2 from "../assets/pic (2).svg";
+import pic4 from "../assets/pic (4).svg";
 
 const featureCards = [
   {
@@ -23,7 +21,7 @@ const featureCards = [
   },
 ];
 
-const featureImages = [bitmap2, bitmap3, bitmap2, bitmap3];
+const featureImages = [pic4];
 
 export function Features() {
   return (
@@ -55,7 +53,7 @@ export function Features() {
 
         <div className="relative h-[460px] w-full">
           <img 
-            src={pic2} 
+            src={pic4} 
             alt="Lawyer Speaking" 
             className="absolute left-0 top-10 h-[320px] w-[240px] object-cover shadow-lg"
           />
