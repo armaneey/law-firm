@@ -8,10 +8,10 @@ const LOGOS = [
 
 export function LogoStrip() {
   return (
-    <section className="bg-ink py-12">
+    <section className="bg-cream py-12">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-around gap-10 px-6 md:px-10">
         {LOGOS.map((logo) => (
-          <span key={logo} className="font-serif text-base font-bold uppercase tracking-wider text-cream/60 md:text-lg">
+          <span key={logo} className="font-serif text-base font-bold uppercase tracking-wider text-ink/60 md:text-lg">
             {logo}
           </span>
         ))}

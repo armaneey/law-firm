@@ -1,7 +1,8 @@
 import { HiOutlineCheckCircle, HiOutlineBriefcase } from "react-icons/hi";
-import { YellowPattern, PhotoPlaceholder } from "../components/YellowPattern";
+import { YellowPattern } from "../components/YellowPattern";
 import bitmap2 from "../assets/Bitmap (2).svg";
 import bitmap3 from "../assets/Bitmap (3).svg";
+import pic2 from "../assets/pic (2).svg";
 
 const featureCards = [
   {
@@ -53,11 +54,15 @@ export function Features() {
         </div>
 
         <div className="relative h-[460px] w-full">
-          <PhotoPlaceholder label="Lawyer Speaking" className="absolute left-0 top-10 h-[320px] w-[240px] shadow-lg" />
+          <img 
+            src={pic2} 
+            alt="Lawyer Speaking" 
+            className="absolute left-0 top-10 h-[320px] w-[240px] object-cover shadow-lg"
+          />
           <div className="absolute left-[200px] top-0 hidden h-12 w-12 items-center justify-center bg-ink text-gold md:flex">
             <HiOutlineBriefcase size={22} />
           </div>
-          <PhotoPlaceholder label="Suit" tone="dark" className="absolute right-12 top-0 h-[200px] w-[180px] shadow-lg" />
+          
           <YellowPattern className="absolute bottom-0 right-0 h-[160px] w-[200px]" variant="horizontal" />
         </div>
       </div>

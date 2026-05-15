@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: "#F9F7F2",
+        cream: "#fAf4E7",
         ink: "#0D0D0D",
         gold: "#F7C35F",
       },
