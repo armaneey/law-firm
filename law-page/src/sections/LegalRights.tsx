@@ -1,15 +1,20 @@
 import { HiOutlineScale } from "react-icons/hi";
 import { FiArrowRight } from "react-icons/fi";
+import pic3 from "../assets/pic (3).svg"
 import { YellowPattern, PhotoPlaceholder } from "../components/YellowPattern";
 
 export function LegalRights() {
   return (
     <section className="bg-cream py-24">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:px-10 lg:grid-cols-2">
-        {/* Image collage */}
+      
         <div className="relative h-[520px] w-full">
           <YellowPattern className="absolute left-0 top-12 h-[260px] w-[140px]" variant="horizontal" />
-          <PhotoPlaceholder label="Attorney" tone="dark" className="absolute left-12 top-0 h-[320px] w-[240px] shadow-lg" />
+           <img 
+            src={pic3} 
+            alt="Scales of Justice" 
+            className="relative z-10 h-full w-full object-cover"
+          />
           <div className="absolute left-[260px] top-[120px] hidden h-12 w-12 items-center justify-center bg-gold text-ink md:flex">
             <HiOutlineScale size={22} />
           </div>
@@ -19,7 +24,7 @@ export function LegalRights() {
           </div>
         </div>
 
-        {/* Copy */}
+     
         <div>
           <span className="mb-4 block text-xs font-bold uppercase tracking-[0.3em] text-gold">Law Service</span>
           <h2 className="mb-6 font-serif text-4xl font-bold leading-tight text-ink md:text-5xl">

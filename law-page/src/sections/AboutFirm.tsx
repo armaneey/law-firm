@@ -1,6 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 import { YellowPattern } from "../components/YellowPattern";
-import bitmap11 from "../assets/Bitmap (4).svg";
+import bitmap11 from "../assets/Bitmap (11).svg";
 
 export function AboutFirm() {
   return (
